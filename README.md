@@ -1,7 +1,6 @@
-# Vue 3 + Vite
+# Vue 3 + Vite + echarts
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+做了一个数据展板
+所有的模块全部封装了一遍，数据也用对象包了一遍，是我目前为止耦合度最低的一个项目，也是命名比较规范的项目
+可能大佬们看起来还是感觉 像shit mountain
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
