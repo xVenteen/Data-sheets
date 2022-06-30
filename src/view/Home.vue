@@ -8,7 +8,7 @@
       <div class="main_top_middle">
         <TopMiddleTittle></TopMiddleTittle>
         <TopMiddleMain></TopMiddleMain>
-        <TopMiddleBottom></TopMiddleBottom>
+        <SystemTypeQuantityRatio></SystemTypeQuantityRatio>
       </div>
       <div class="main_top_side">
         <HostHesourcesNumber></HostHesourcesNumber>
@@ -25,7 +25,7 @@
         <BottomTopBox></BottomTopBox>
       </div>
       <div class="main_bottom_bottom">
-        <BottomBottomSideBox></BottomBottomSideBox>
+        <HostWaringRatio></HostWaringRatio>
         <BottomBottomMiddleBox></BottomBottomMiddleBox>
         <BottomBottomMiddleBox></BottomBottomMiddleBox>
         <BottomBottomSideBox></BottomBottomSideBox>
@@ -44,10 +44,11 @@ import BottomTopBox from '../components/BottomTopBox.vue';
 import BottomBottomSideBox from '../components/BottomBottomSideBox.vue';
 import BottomBottomMiddleBox from '../components/BottomBottomMiddleBox.vue';
 
-import BasicResourcesDisplay from './ResourcesDisplay/BasicResourcesDisplay.vue'
-import HostHesourcesNumber from './ResourcesDisplay/HostHesourcesNumber.vue'
-import OfflineResources from './ResourcesDisplay/OfflineResources.vue'
-
+import BasicResourcesDisplay from './TopDataDisplay/BasicResourcesDisplay.vue'
+import HostHesourcesNumber from './TopDataDisplay/HostHesourcesNumber.vue'
+import OfflineResources from './TopDataDisplay/OfflineResources.vue'
+import HostWaringRatio from './BottomDataDisplay/HostWaringRatio.vue'
+import SystemTypeQuantityRatio from './TopDataDisplay/TopMiddleBottomData/TopMiddleBottomData.vue'
 </script>
 
 <style lang='scss'>

@@ -10,6 +10,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.7",
     "echarts": "^5.3.3",
+    "element-resize-detector": "^1.2.4",
     "postcss-px2rem": "^0.3.0",
     "vue": "^3.2.25"
   },
