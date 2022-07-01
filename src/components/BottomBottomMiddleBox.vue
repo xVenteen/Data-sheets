@@ -1,6 +1,9 @@
 <template>
     <div class="main_bottom_bottom_middle_box">
         <div class="title">{{ props.title }}</div>
+        <div class="main">
+            <slot></slot>
+        </div>
     </div>
 </template>
 
@@ -27,6 +30,12 @@ const props = defineProps({
         text-align: center;
         color: #0EFCFF;
         padding-top: 0.3vw;
+    }
+
+    .main {
+        width: 100%;
+        height: 70%;
+        padding-top: 2.1vw;
     }
 }
 </style>

@@ -61,10 +61,8 @@ const eOptionsCurve = reactive({
             barWidth: 4,
             label: {   //设置柱状图上显示  对应值
                 show: true,
-
                 color: '#fff',
                 fontSize: '6',
-
                 formatter: (params) => {
                     return params.value[params.encode.y[0]];
                 },
@@ -75,7 +73,7 @@ const eOptionsCurve = reactive({
                         show: true,
                         distance: 20,
                         // position: 'right',
-                        position: ['150', '-2'],
+                        position: ['200', '-2'],
                         textStyle: {
                             color: 'rgb(56,225,225)'
                         }
@@ -83,8 +81,8 @@ const eOptionsCurve = reactive({
                     barBorderRadius: [5, 5, 5, 5],// 设置柱状图圆角（顺时针左上，右上，右下，左下）
                     color: new echarts.graphic.LinearGradient(
                         0, 0, 1, 0,
-                        [{ offset: 0, color: 'rgb(99,253,247,0.1)' },
-                        { offset: 1, color: 'rgb(99,253,247,1)' }])
+                        [{ offset: 0, color: 'rgba(99,253,247,0.1)' },
+                        { offset: 1, color: 'rgba(99,253,247,1)' }])
                 },
 
             },

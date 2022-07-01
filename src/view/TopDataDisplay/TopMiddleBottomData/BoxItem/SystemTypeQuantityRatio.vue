@@ -1,6 +1,6 @@
 <template>
 <BoxItem title="系统类型数量占比">
-<Echarts echartsId="systemtypequantityratio" eWidth="100%" eHeight="87%" :options="eOptionsCurve" style="font-size: .7vw">
+<Echarts echartsId="systemtypequantityratio" eWidth="100%" eHeight="85%" :options="eOptionsCurve" style="font-size: .7vw">
         </Echarts>
 </BoxItem>
 </template>
@@ -16,15 +16,16 @@ const eOptionsCurve = reactive(
   },
   color:['#38eb70','#2e8cff','#0efcff','#858ff8','#fd9133','#f7e270'],
   legend: {
-    top: '6%',
-    right:110,
+    top: '4%',
+    left:'50%',
+    // bottom:,
     orient: 'center',
     textStyle:{
         color:'#ffffff',
         fontSize:'8px'
     },
-    itemHeight:13,
-    itemWidth:13,
+    itemHeight:14,
+    itemWidth:14,
     itemGap:10
     // bottom: 0,
   },

@@ -14,7 +14,7 @@ const eOptionsCurve = reactive(
         tooltip: {
             trigger: 'item'
         },
-        color: ['#38eb70', '#2e8cff', '#0efcff', '#858ff8', '#fd9133', '#f7e270'],
+        color: ['#38eb70', '#f7e16c', '#0efcff', '#fd9133', '#4d92f2', '#749f83'],
         legend: {
             top: '6%',
             right: 50,

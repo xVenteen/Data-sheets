@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.7",
     "echarts": "^5.3.3",
     "element-resize-detector": "^1.2.4",

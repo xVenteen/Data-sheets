@@ -12,7 +12,7 @@
       </div>
       <div class="main_top_side">
         <HostHesourcesNumber></HostHesourcesNumber>
-        <TopSideBox></TopSideBox>
+        <HostOfflineResources></HostOfflineResources>
       </div>
     </div>
     <div class="main_middle">
@@ -20,35 +20,38 @@
     </div>
     <div class="main_bottom">
       <div class="main_bottom_top">
-        <BottomTopBox></BottomTopBox>
-        <BottomTopBox></BottomTopBox>
-        <BottomTopBox></BottomTopBox>
+        <MessageListLeft></MessageListLeft>
+        <ServerInterfaceStatusRatio></ServerInterfaceStatusRatio>
+        <MessageListRight></MessageListRight>
       </div>
       <div class="main_bottom_bottom">
         <HostWaringRatio></HostWaringRatio>
-        <BottomBottomMiddleBox></BottomBottomMiddleBox>
-        <BottomBottomMiddleBox></BottomBottomMiddleBox>
-        <BottomBottomSideBox></BottomBottomSideBox>
+        <AllHost10MimeStatus></AllHost10MimeStatus>
+        <NewUploadMemoryCpu></NewUploadMemoryCpu>
+        <NewUploadDatas></NewUploadDatas>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import TopSideBox from '../components/TopSideBox.vue';
 import TopMiddleTittle from '../components/TopMiddle/TopMiddleTittle.vue'
 import TopMiddleMain from '../components/TopMiddle/TopMiddleMain.vue'
-import TopMiddleBottom from '../components/TopMiddle/TopMiddleBottom/TopMiddleBottom.vue'
 import MiddleGroup from '../components/MiddleGroup.vue';
-import BottomTopBox from '../components/BottomTopBox.vue';
-import BottomBottomSideBox from '../components/BottomBottomSideBox.vue';
-import BottomBottomMiddleBox from '../components/BottomBottomMiddleBox.vue';
 
 import BasicResourcesDisplay from './TopDataDisplay/BasicResourcesDisplay.vue'
 import HostHesourcesNumber from './TopDataDisplay/HostHesourcesNumber.vue'
 import OfflineResources from './TopDataDisplay/OfflineResources.vue'
-import HostWaringRatio from './BottomDataDisplay/HostWaringRatio.vue'
+import HostOfflineResources from './TopDataDisplay/HostOfflineResources.vue'
 import SystemTypeQuantityRatio from './TopDataDisplay/TopMiddleBottomData/TopMiddleBottomData.vue'
+import ServerInterfaceStatusRatio from './MiddleDataDisplay/ServerInterfaceStatusRatio.vue';
+import MessageListLeft from './MiddleDataDisplay/MessageListLeft.vue';
+import MessageListRight from './MiddleDataDisplay/MessageListRight.vue';
+import HostWaringRatio from './BottomDataDisplay/HostWaringRatio.vue'
+import AllHost10MimeStatus from './BottomDataDisplay/AllHost10MimeStatus.vue';
+import NewUploadMemoryCpu from './BottomDataDisplay/NewUploadMemoryCpu.vue';
+import NewUploadDatas from './BottomDataDisplay/NewUploadDatas.vue';
+
 </script>
 
 <style lang='scss'>
