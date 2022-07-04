@@ -2,8 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 // import 'amfe-flexible/index.js'
 import './utils/rem'
-import animate from 'animate.css';
+import Particles from "particles.vue3";
 
 createApp(App)
-    .use(animate)
+    .use(Particles)
     .mount('#app')

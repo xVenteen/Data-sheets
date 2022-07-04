@@ -56,9 +56,10 @@ import NewUploadDatas from './BottomDataDisplay/NewUploadDatas.vue';
 
 <style lang='scss'>
 body {
+  position: relative;
   margin: 0;
   padding: 0;
-  background-color: #1d2b56;
+  // background-color: #1d2b56;
   width: 100vw;
   height: 100vh;
 }

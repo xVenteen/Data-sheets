@@ -1,12 +1,14 @@
 <template>
     <div class="datalist">
-        <ul>
-            <li v-for="message in data.messages">
-                <div class="message">{{ message.msg }}</div>
-                <div class="timer">{{ message.timer }}</div>
-            </li>
+        <div class="list">
+            <transition-group tag="ul">
+                <li v-for="message in data.messages" :key="message">
+                    <div class="message">{{ message.msg }}</div>
+                    <div class="timer">{{ message.timer }}</div>
+                </li>
+            </transition-group>
+        </div>
 
-        </ul>
     </div>
 </template>
 
@@ -43,7 +45,8 @@ onMounted(() => {
                 msg: '44(3楼HP打印机)',
                 timer: '2022-07-01 14:56:47'
             })
-            data.messages.shift()
+            if (data.messages.length >= 6)
+                data.messages.shift()
         }, 1)
     }, 2000)
 }),
@@ -56,25 +59,62 @@ onMounted(() => {
 
 <style lang='scss' scoped>
 .datalist {
-    width: 90%;
+    width: 100%;
     height: 80%;
     font-size: .7vw;
     color: white;
     margin-top: 10%;
 
-    ul {
-        display: flex;
-        flex-direction: column-reverse;
+    .list {
         width: 100%;
-        height: 100%;
+        height: 120%;
         overflow: hidden;
 
-        li {
+        ul {
             display: flex;
-            justify-content: space-between;
-            list-style-type: none;
-            margin: 1.1% 0;
+            flex-direction: column;
+            width: 90%;
+            height: 90%;
+
+            li {
+
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+                margin: 1.1% 0;
+            }
+
+            .v-enter,
+            .v-leave-to {
+                opacity: 0;
+                transform: translateY(-70px);
+                transition: transform 0.1s ease;
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    list-style-type: none;
+                    margin: 1.1% 0;
+                }
+            }
+
+            // .v-enter-active,
+            // .v-leave-active {
+            //     transition: all 0.2s ease // transition: all 0.6s ease;
+            // }
+
+            .v-move {
+                /*下面的 .v-move和.v-leave-active 配合使用，能够实现列表后续的元素渐渐飘上来的效果*/
+                transition: all 0.6s ease;
+            }
+
+            .v-leave-active {
+                position: absolute;
+                // display: flex;
+                // justify-content: space-between;
+            }
         }
     }
+
 }
 </style>
